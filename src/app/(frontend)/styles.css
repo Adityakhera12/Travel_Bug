@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@import "mapbox-gl/dist/mapbox-gl.css";
+
+@theme {
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-newsreader);
+}
+
+.figma-custom-code-fragment {
+  display: contents;
+}
+
+.figma-bypass-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 2147483647;
+  transform: translateY(-150%);
+  border-radius: 6px;
+  background: #111827;
+  color: #fff;
+  padding: 8px 12px;
+  font: 600 14px/1.2 system-ui, sans-serif;
+  text-decoration: none;
+}
+
+.figma-bypass-link:focus {
+  transform: translateY(0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-manrope), Arial, Helvetica, sans-serif;
+}
+
+button,
+a,
+select {
+  cursor: pointer;
+}
+
+.map-price-marker {
+  border: 0;
+  border-radius: 999px;
+  background: #0f766e;
+  color: white;
+  padding: 7px 11px;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 5px 18px rgb(28 25 23 / 22%);
+}
+
+.mapboxgl-popup-content {
+  border-radius: 12px;
+  padding: 12px 14px;
+  box-shadow: 0 8px 30px rgb(28 25 23 / 14%);
+}
